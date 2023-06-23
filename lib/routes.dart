@@ -12,14 +12,26 @@ final subPageRoutes = GoRouter(
     ),
     GoRoute(
       path: '/subpage1',
-      pageBuilder: (context, state) => MaterialPage(
-        child: SubPage(),
+      pageBuilder: (context, state) => const MaterialPage(
+        child: SubPage(
+          pageName: 'Buttons',
+        ),
       ),
     ),
     GoRoute(
       path: '/subpage2',
-      pageBuilder: (context, state) => MaterialPage(
-        child: SubPage(),
+      pageBuilder: (context, state) => const MaterialPage(
+        child: SubPage(
+          pageName: 'Text',
+        ),
+      ),
+    ),
+    GoRoute(
+      path: '/subpage3',
+      pageBuilder: (context, state) => const MaterialPage(
+        child: SubPage(
+          pageName: 'Forms',
+        ),
       ),
     ),
     // Agrega más rutas para tus subpáginas
